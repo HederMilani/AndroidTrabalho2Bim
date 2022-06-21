@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:id="@+id/itemList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgList"
+            android:layout_alignTop="@id/imgList"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Um texto maior para aparecer em mais de uma linha "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgList"
+            android:layout_below="@id/title"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
